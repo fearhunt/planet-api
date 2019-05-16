@@ -1,2 +1,2 @@
-# planet-api
-Planet API 
+# planet-apiii
+Membuat sebuah API sederhana yang berisikan data-data planet di tata surya
