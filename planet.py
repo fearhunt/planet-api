@@ -16,64 +16,64 @@ api_schema = Schema()
 # end point to planets
 @app.route("/api/planet")
 def planet():
-    planets = {
+    planets = [{
         "Mars": {
             "diameter": "6,752 km",
             "mass": "6.42 x 10^23 kg",
             "distance": "227,943,824 km",
             "period": "687 days",
             "temperature": "-153 to 20 celcius"
-        },
-        "Mercury": {
+        }},
+        {"Mercury": {
             "diameter": "4,879 km",
             "mass": "3.30 x 10^23 kg",
             "distance": "57,909,227 km",
             "period": "88 days",
             "temperature": "-173 to 427 celcius"
-        },
-        "Venus": {
+        }},
+        {"Venus": {
             "diameter": "12,104 km",
             "mass": "4.87 x 10^24 kg",
             "distance": "108,209,475 km",
             "period": "225 days",
             "temperature": "462 celcius"
-        },
-        "Earth": {
+        }},
+        {"Earth": {
             "diameter": "12,714 km",
             "mass": "5.97 x 10^24 kg",
             "distance": "-",
             "period": "365.24 days",
             "temperature": "-88 to 58 celcius"
-        },
-        "Jupiter": {
+        }},
+        {"Jupiter": {
             "diameter": "133,709 km",
             "mass": "1.90 x 10^27 kg",
             "distance": "778,340,821 km",
             "period": "4,333 days",
             "temperature": "-148 celcius"
-        },
-        "Saturn": {
+        }},
+        {"Saturn": {
             "diameter": "108,728 km",
             "mass": "5.68 x 10^26 kg",
             "distance": "1,426,666,422 km",
             "period": "10,756",
             "temperature": "-178 celcius"
-        },
-        "Uranus": {
+        }},
+        {"Uranus": {
             "diameter": "49,946 km",
             "mass": "8.68 x 10^25 kg",
             "distance": "2,870,658,186 km",
             "period": "30,687 days",
             "temperature": "-216 celcius"
-        },
-        "Neptune": {
+        }},
+        {"Neptune": {
             "diameter": "48,682 km",
             "mass": "1.02 x 10^26 kg",
             "distance": "4,498,396,441 km",
             "period": "60,190 days",
             "temperature": "-214 celcius"
-        }
-    }
+        }}
+    ]
     return jsonify(planets)
 
 # ----------------------------------------- #
